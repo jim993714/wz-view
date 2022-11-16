@@ -1,4 +1,4 @@
-declare const Button: import("@wz/utils/dist/lib/withinstall").SFCWithInstall<{
+declare const Button: import("wvutils/dist/lib/withinstall").SFCWithInstall<{
     name: string;
 }>;
 export default Button;

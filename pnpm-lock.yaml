@@ -48,9 +48,9 @@ importers:
 
   packages/components:
     specifiers:
-      '@wz/utils': workspace:^1.0.0
+      wvutils: workspace:^1.0.0
     dependencies:
-      '@wz/utils': link:../utils
+      wvutils: link:../utils
 
   packages/utils:
     specifiers: {}

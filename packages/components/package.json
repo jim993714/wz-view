@@ -20,6 +20,6 @@
   "license": "MIT",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "@wz/utils": "workspace:^1.0.0"
+    "wvutils": "workspace:^1.0.0"
   }
 }
