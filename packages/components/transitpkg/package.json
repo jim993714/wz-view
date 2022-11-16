@@ -1,0 +1,25 @@
+{
+  "name": "wz-view-ui",
+  "version": "1.0.5",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "build": "vite build",
+    "build:less": "esno build/buildLess"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "吊的一批",
+    "很牛的组件"
+  ],
+  "author": "wzj",
+  "license": "MIT",
+  "typings": "lib/index.d.ts",
+  "dependencies": {
+    "@wz/utils": "workspace:^1.0.0"
+  }
+}
