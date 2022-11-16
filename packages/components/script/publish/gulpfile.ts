@@ -16,7 +16,7 @@ const run = async (command: string, path: string) => {
 }
 //复制
 const copypackage = async () => {
-    return src(`${componentPath}/transitpkg/**`).pipe(dest(`${componentPath}/dist/`));
+    return src(`${componentPath}/transitpkg/**`).pipe(dest(`${componentPath}/wz-view-ui/`));
 };
 //发布任务
 const publish = async () => {
@@ -25,7 +25,7 @@ const publish = async () => {
     //复制到dist目录
     await copypackage()
     //在dist下执行发布命令
-    await run('npm publish', `${componentPath}/dist`)
+    await run('npm publish --access=public', `${componentPath}/wz-view-ui`)
     // run('pnpm publish')
 
 }

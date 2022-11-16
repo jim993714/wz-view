@@ -27,18 +27,18 @@ const run = async (command: string) => {
 
 //处理样式
 const buildStyle = () => {
-    return src(`${componentPath}/src/**/style/**.less`)
+    return src(`${componentPath}//wz-view-ui/**/style/**.less`)
         .pipe(less())
         .pipe(
             autoprefixer()
         )
-        .pipe(dest(`${componentPath}/dist/lib/src`))
-        .pipe(dest(`${componentPath}/dist/es/src`));
+        .pipe(dest(`${componentPath}/wz-view-ui/lib/src`))
+        .pipe(dest(`${componentPath}/wz-view-ui/es/src`));
 };
 
 
 export default series(
-    async () => run(`rm -rf ${componentPath}/dist`),
+    async () => run(`rm -rf ${componentPath}/wz-view-ui`),
     parallel(
         async () => buildStyle(),
         async () => buildComponent()

@@ -48,7 +48,7 @@ importers:
 
   packages/components:
     specifiers:
-      wvutils: workspace:^1.0.0
+      wvutils: 1.0.0
     dependencies:
       wvutils: link:../utils
 
