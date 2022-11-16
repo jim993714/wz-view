@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
-  "module": "es/index.js",
+  "module": "es/index.mjs",
   "scripts": {
-    "build": "vite build",
-    "build:less": "esno build/buildLess"
+    "build": "vite build"
   },
   "files": [
     "es",

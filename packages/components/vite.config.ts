@@ -59,6 +59,8 @@ export default defineConfig({
       generateBundle(config, bundle) {
           //这里可以获取打包后的文件目录以及代码code
           const keys = Object.keys(bundle)
+          console.log(keys,'keyskeyskeyskeys');
+          
 
           for (const key of keys) {
               const bundler: any = bundle[key as any]
