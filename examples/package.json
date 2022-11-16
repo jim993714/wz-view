@@ -11,6 +11,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "wz-view-ui": "workspace:^1.0.0"
+    "wz-view-ui": "^1.0.15"
   }
 }
