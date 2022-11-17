@@ -11,5 +11,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "wz-view-ui": "^1.0.20"
   }
 }

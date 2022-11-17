@@ -1,9 +1,7 @@
 {
   "name": "wz-view-ui",
   "version": "1.0.0",
-  "description": "",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "index.ts",
   "scripts": {
     "build": "vite build"
   },
@@ -12,13 +10,14 @@
     "lib"
   ],
   "keywords": [
-    "吊的一批",
-    "很牛的组件"
+    "wz-view-ui",
+    "vue3组件库"
   ],
-  "author": "wzj",
+  "author": "王子健",
   "license": "MIT",
+  "description": "",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "wvutils": "1.0.0"
+
   }
 }

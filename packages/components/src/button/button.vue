@@ -1,15 +1,45 @@
+<!-- button.vue -->
 <template>
-  <button class="my-button">测试按钮</button>
+    <button class="k-button" :class="styleClass">
+        <div class="k-button-text">
+            <slot />
+        </div>
+    </button>
 </template>
 
 <script lang="ts">
-export default {
-  name: "w-button",
-};
-</script>
+import './style/index.less'
+import { defineComponent, computed } from 'vue'
+import { buttonProps } from './types'
+export default defineComponent({
+    name: 'k-button',
+    props: buttonProps,
+    setup(props) {
 
-<style lang="less" scoped>
-.my-button{
-    background: pink;
-}
-</style>
+        const styleClass = computed(() => {
+            return {
+                [`k-button--${props.type}`]: props.type,
+                'is-plain': props.plain,
+                'is-round': props.round,
+                'is-disabled': props.disabled,
+                [`k-button--${props.size}`]: props.size,
+            }
+        })
+
+        //图标
+        const iconFont = computed(() => {
+            const iconName = props.icon
+            const position = props.iconPosition
+            return {
+                iconName,
+                position
+            }
+        })
+
+        return {
+            styleClass,
+            iconFont
+        };
+    },
+});
+</script>

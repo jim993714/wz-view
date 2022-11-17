@@ -1,12 +1,12 @@
-import { series, parallel } from "gulp";
-import { removeDist, buildComponent, buildStyle } from "./index";
+import { series, parallel } from 'gulp'
+import { removeDist, buildStyle, buildComponent } from './index'
+
 
 export default series(
-  async () => removeDist(),
-  parallel(async () => {
-    await buildComponent();
-    setTimeout(()=>{
-        buildStyle();
-    },1000)
-  })
-);
+    async () => removeDist(),
+    parallel(
+        async () => buildStyle(),
+        async () => buildComponent()
+    )
+)
+
