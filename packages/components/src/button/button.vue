@@ -8,8 +8,8 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .my-button{
-  background: pink;
+    background: pink;
 }
 </style>

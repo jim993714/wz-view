@@ -42,9 +42,9 @@ importers:
 
   examples:
     specifiers:
-      wz-view-ui: workspace:^1.0.0
+      wz-view-ui: ^1.0.16
     dependencies:
-      wz-view-ui: link:../packages/components
+      wz-view-ui: 1.0.16
 
   packages/components:
     specifiers:
@@ -3842,6 +3842,16 @@ packages:
   /wrappy/1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
+
+  /wvutils/1.0.0:
+    resolution: {integrity: sha512-u78/nH5qMqAfHJpnB7RXEsGsyYpAHpx1OFw7nvM37AZxAf1JHcl5/x1+Rm612VXSZOpMKZW+YTP7O23fUEnwwQ==}
+    dev: false
+
+  /wz-view-ui/1.0.16:
+    resolution: {integrity: sha512-byw/IrX207LB+XGRGaGdHteu1f8EpRGCShEaIwQyyYRNIWurG7Sek+9ane0UVL4uKraxNA21tnAzRyapMO2TUQ==}
+    dependencies:
+      wvutils: 1.0.0
+    dev: false
 
   /xtend/4.0.2:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}

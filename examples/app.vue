@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <Button></Button>>
-  </div>
+  <div><Button></Button></div>
 </template>
 
 <script lang="ts" setup>
+import { Button } from "wz-view-ui";
 </script>
