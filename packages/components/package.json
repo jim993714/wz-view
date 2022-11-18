@@ -18,6 +18,6 @@
   "description": "",
   "typings": "lib/index.d.ts",
   "dependencies": {
-
+    "wvutils": "workspace:^1.0.0"
   }
 }
