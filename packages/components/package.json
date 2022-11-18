@@ -1,8 +1,8 @@
 {
   "name": "wz-view-ui",
   "version": "1.0.25",
-  "main": "lib/index.js",
-  "module": "es/index.mjs",
+  "main": "wz-view-ui/lib/packages/components/index.js",
+  "module": "wz-view-ui/es/packages/components/index.mjs",
   "scripts": {
     "build": "vite build"
   },
@@ -19,6 +19,13 @@
   "description": "",
   "typings": "lib/index.d.ts",
   "dependencies": {
+    "@arco-design/web-vue": "^2.38.3",
+    "consola": "^2.15.3",
     "wvutils": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "unplugin-auto-import": "^0.11.4",
+    "unplugin-vue-components": "^0.22.9",
+    "vite-plugin-style-import": "^2.0.0"
   }
 }

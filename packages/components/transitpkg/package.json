@@ -1,6 +1,6 @@
 {
     "name": "wz-view-ui",
-    "version": "1.0.27",
+    "version": "1.0.29",
     "main": "lib/index.js",
     "module": "es/index.mjs",
     "scripts": {
