@@ -1,0 +1,24 @@
+{
+    "name": "wz-view-ui",
+    "version": "1.0.27",
+    "main": "lib/index.js",
+    "module": "es/index.mjs",
+    "scripts": {
+        "build": "vite build"
+    },
+    "files": [
+        "es",
+        "lib"
+    ],
+    "keywords": [
+        "wz-view-ui",
+        "vue3组件库"
+    ],
+    "author": "王子健",
+    "license": "MIT",
+    "description": "",
+    "typings": "lib/index.d.ts",
+    "dependencies": {
+        "wvutils": "workspace:^1.0.0"
+    }
+}

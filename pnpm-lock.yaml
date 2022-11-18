@@ -49,15 +49,17 @@ importers:
 
   examples:
     specifiers:
-      wz-view-ui: ^1.0.21
+      wz-view-ui: ^1.0.27
     dependencies:
-      wz-view-ui: 1.0.25
+      wz-view-ui: 1.0.27
 
   packages/components:
     specifiers:
       wvutils: workspace:^1.0.0
+      wz-view-ui: ^1.0.25
     dependencies:
       wvutils: link:../utils
+      wz-view-ui: 1.0.25
 
   packages/utils:
     specifiers: {}
@@ -3933,6 +3935,12 @@ packages:
 
   /wz-view-ui/1.0.25:
     resolution: {integrity: sha512-wcdUormQv7ykuBfHprzAMZijmws9BETqqCQhhJDaYpvfIdIXwTDNezM0aHZFEe/IXF48Gi9e8SiQkNxhkbeD5A==}
+    dev: false
+
+  /wz-view-ui/1.0.27:
+    resolution: {integrity: sha512-O5lQl07GrnaDnojxi6J2lIvz8jD0v/xdC8GWQBZI/LztZWc0ktX2v26nUK6pg+3dY+whqHGlr3UiiGZrFvxi4A==}
+    dependencies:
+      wvutils: link:packages/utils
     dev: false
 
   /xtend/4.0.2:

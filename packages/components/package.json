@@ -18,6 +18,7 @@
   "description": "",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "wvutils": "workspace:^1.0.0"
+    "wvutils": "workspace:^1.0.0",
+    "wz-view-ui": "^1.0.25"
   }
 }
