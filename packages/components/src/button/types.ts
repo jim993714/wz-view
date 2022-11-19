@@ -1,32 +1,40 @@
-
-import { ExtractPropTypes } from 'vue'
-
-
-export const ButtonType = ['primary', 'success', 'info', 'warning', 'danger', 'text']
-
-export const ButtonSize = ['midium', 'small', 'mini'];
-
-
-export const buttonProps = {
+export const buttonPropsType = {
   type: {
     type: String,
-    validator(value: string) {
-      return ButtonType.includes(value)
-    }
+    default: "secondary",
   },
-  plain: Boolean,
-  round: Boolean,
-  disabled: Boolean,
-  icon: String,
-  iconPosition: String,
+  shape: {
+    type: String,
+    default: "",
+  },
+  status: {
+    type: String,
+    default: "normal",
+  },
   size: {
     type: String,
-    validator(value: string) {
-      return ButtonSize.includes(value)
-    }
-  }
-}
-
-export type ButtonProps = ExtractPropTypes<typeof buttonProps>
+    default: "medium",
+  },
+  long: {
+    type: Boolean,
+    default: false,
+  },
+  loading: {
+    type: Boolean,
+    default: false,
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
+  },
+  htmlType: {
+    type: String,
+    default: "button",
+  },
+  href: {
+    type: String,
+    default: "",
+  },
+};
 
 

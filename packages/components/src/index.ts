@@ -1,4 +1,5 @@
 import { default as Button } from "./button";
-
-export { Button };
+// import { default as Table } from "./table";
+import "@arco-design/web-vue/dist/arco.css";
+export { Button};
 export default [Button];

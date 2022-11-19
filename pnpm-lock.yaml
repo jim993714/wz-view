@@ -49,9 +49,9 @@ importers:
 
   examples:
     specifiers:
-      wz-view-ui: workspace:^1.0.25
+      wz-view-ui: ^1.0.40
     dependencies:
-      wz-view-ui: link:../packages/components
+      wz-view-ui: 1.0.40
 
   packages/components:
     specifiers:
@@ -4289,6 +4289,20 @@ packages:
   /wrappy/1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
+
+  /wvutils/1.0.0:
+    resolution: {integrity: sha512-u78/nH5qMqAfHJpnB7RXEsGsyYpAHpx1OFw7nvM37AZxAf1JHcl5/x1+Rm612VXSZOpMKZW+YTP7O23fUEnwwQ==}
+    dev: false
+
+  /wz-view-ui/1.0.40:
+    resolution: {integrity: sha512-fjR9wVRdAUQIo2hm2PWAtvgwT1rm+vHPvEc/WxprNEXXtzkrgA4jKfW9nesvQ2n+Vu8kP5H+MUsr1P1lBPVFXA==}
+    dependencies:
+      '@arco-design/web-vue': 2.38.3
+      consola: 2.15.3
+      wvutils: 1.0.0
+    transitivePeerDependencies:
+      - vue
+    dev: false
 
   /xtend/4.0.2:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
